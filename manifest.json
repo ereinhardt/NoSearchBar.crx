@@ -1,0 +1,25 @@
+{
+  "author": {
+    "name": "Erik Anton Reinhardt",
+    "url": "https://ereinhardt.net"
+  },
+  "manifest_version": 2,
+  "name": "NoSearchBar",
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "description": "Remove SearchBars from the Internet.",
+  "version": "1.0",
+  "icons": {
+    "48": "./images/icon.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "./script.js",
+      "opencv.js"
+    ],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": ["Download.png"]
+}
