@@ -103,10 +103,19 @@ function getURL() {
         document.querySelectorAll("*[jsname=RNNXgb]")[0].style.display = "none";
       }
     }
+  } else if (getURL.toUpperCase().includes("YOUTUBE")) {
+   document.getElementsByTagName("ytd-searchbox")[0].style.display = "none";
+   document.getElementById("voice-search-button").style.display = "none";
+
+   if(document.getElementsByTagName("tp-yt-paper-input")[0]){
+     document.getElementsByTagName("tp-yt-paper-input")[0].style.display = "none";
+   }
   } else if (getURL.toUpperCase().includes("APPLE") && getURL.toUpperCase().includes("SEARCH") == false) {
     document.querySelectorAll("#ac-gn-link-search")[0].style.display = "none";
   } else if (getURL.toUpperCase().includes("INSTAGRAM")) {
-    document.getElementsByClassName('_0aCwM')[0].style.display = "none";
+    const parent = document.querySelectorAll("._aawf")[0].parentNode;
+    const child = document.querySelectorAll("._aawf")[0];
+    parent.removeChild(child);
   } else if (getURL.toUpperCase().includes("EBAY") && getURL.toUpperCase().includes("KLEIN") == false) {
     document.getElementsByClassName('gh-td-s')[0].style.display = "none";
   } else if (getURL.toUpperCase().includes("AMAZON") && getURL.toUpperCase().includes("S?K")) {
