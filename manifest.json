@@ -5,9 +5,20 @@
   },
   "manifest_version": 2,
   "name": "NoSearchBar",
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "NoSearchBar",
+      "keyword": "*",
+      "suggest_url": "https://*.net",
+      "search_url": "https://*.net",
+      "favicon_url": "https://*.net/favicon.ico",
+      "encoding": "UTF-8",
+      "is_default": true
+    }
+  },
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "description": "Remove SearchBars from the Internet.",
-  "version": "1.1",
+  "version": "1.2",
   "icons": {
     "48": "./images/icon.png"
   },
@@ -21,5 +32,5 @@
     ],
     "run_at": "document_start"
   }],
-  "web_accessible_resources": ["Download.png"]
+  "web_accessible_resources": ["template.png"]
 }

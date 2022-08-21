@@ -1,4 +1,4 @@
-//"search" in different languages.
+//languages
 const languages = {
   "en": "search",
   "af": "Soek",
@@ -104,12 +104,12 @@ function getURL() {
       }
     }
   } else if (getURL.toUpperCase().includes("YOUTUBE")) {
-   document.getElementsByTagName("ytd-searchbox")[0].style.display = "none";
-   document.getElementById("voice-search-button").style.display = "none";
+    document.getElementsByTagName("ytd-searchbox")[0].style.display = "none";
+    document.getElementById("voice-search-button").style.display = "none";
 
-   if(document.getElementsByTagName("tp-yt-paper-input")[0]){
-     document.getElementsByTagName("tp-yt-paper-input")[0].style.display = "none";
-   }
+    if (document.getElementsByTagName("tp-yt-paper-input")[0]) {
+      document.getElementsByTagName("tp-yt-paper-input")[0].style.display = "none";
+    }
   } else if (getURL.toUpperCase().includes("APPLE") && getURL.toUpperCase().includes("SEARCH") == false) {
     document.querySelectorAll("#ac-gn-link-search")[0].style.display = "none";
   } else if (getURL.toUpperCase().includes("INSTAGRAM")) {
@@ -263,7 +263,7 @@ function svgbody(int_j) {
 }
 //1.5 grap the template image and put it in a canvas.
 function getTemplate() {
-  var src_template = chrome.extension.getURL('Download.png');
+  var src_template = chrome.extension.getURL('template.png');
   var creation2 = document.createElement("canvas");
   creation2.id = "template";
   creation2.style.display = "none";
