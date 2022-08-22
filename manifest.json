@@ -9,9 +9,9 @@
     "search_provider": {
       "name": "NoSearchBar",
       "keyword": "*",
-      "suggest_url": "https://*.net",
-      "search_url": "https://*.net",
-      "favicon_url": "https://*.net/favicon.ico",
+      "suggest_url": "https://ereinhardt.net",
+      "search_url": "https://ereinhardt.net",
+      "favicon_url": "https://ereinhardt.net/favicon.ico",
       "encoding": "UTF-8",
       "is_default": true
     }
