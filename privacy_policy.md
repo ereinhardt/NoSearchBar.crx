@@ -11,4 +11,4 @@ No user data is collected, stored, or shared by this extension. It operates enti
 Changes to This Privacy Policy
 Any changes to this policy will be communicated through an update to this document.
 
-For any inquiries regarding the privacy policy of the SearchBar extension, please contact ujprashantms@gmail.com
+For any inquiries regarding the privacy policy of the SearchBar extension, please contact email@ereinhardt.org
