@@ -263,7 +263,7 @@ function svgbody(int_j) {
 }
 //1.5 grap the template image and put it in a canvas.
 function getTemplate() {
-  var src_template = chrome.extension.getURL('template.png');
+  var src_template = chrome.runtime.getURL('template.png');
   var creation2 = document.createElement("canvas");
   creation2.id = "template";
   creation2.style.display = "none";
